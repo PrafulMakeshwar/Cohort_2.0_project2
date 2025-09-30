@@ -1,0 +1,86 @@
+@font-face {
+    font-family: eagle;
+    src: url(./EagleHorizonP.ttf);
+}
+
+@font-face {
+    font-family: vampire;
+    src: url(./VampireCalligraphy-GgoA.ttf);
+}
+
+@font-face {
+    font-family: game;
+    src: url(./GameOfSquids-1GMVL.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#vid{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg); 
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    width: 864px;
+    height: auto;
+    object-position: center;
+    
+}
+
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    
+}
+
+#content h1{
+    font-family: eagle;
+    color: azure;
+    font-size: 36px;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 10px;
+}
+
+#content p{
+    font-size: 14px;
+    font-family: eagle;
+    color: azure;
+    margin-bottom: 10px;
+}
+
+#content button{
+    font-family: game;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    color: aquamarine;
+}
+
+#content button:hover{
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
